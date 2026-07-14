@@ -12,10 +12,8 @@ export default function ReferanslarimizPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
       <div className="mx-auto max-w-2xl text-center">
-        <h1 className="text-3xl font-bold text-brand-primary-dark sm:text-4xl">
-          Referanslarımız
-        </h1>
-        <p className="mt-4 text-black/60">
+        <h1 className="text-3xl font-bold text-white sm:text-4xl">Referanslarımız</h1>
+        <p className="mt-4 text-brand-muted">
           Kamu kurumları ve özel sektörden başlıca referanslarımız aşağıda listelenmiştir.
         </p>
       </div>
@@ -24,9 +22,9 @@ export default function ReferanslarimizPage() {
         <LogoStrip logos={referenceLogos} />
       </div>
 
-      <div className="mt-14 rounded-2xl bg-brand-surface p-8">
-        <h2 className="text-lg font-semibold text-brand-primary-dark">Ve daha fazlası...</h2>
-        <div className="mt-5 grid grid-cols-1 gap-x-8 gap-y-2 text-sm text-black/70 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 rounded-2xl border border-brand-border bg-brand-surface p-8">
+        <h2 className="text-lg font-semibold text-white">Ve daha fazlası...</h2>
+        <div className="mt-5 grid grid-cols-1 gap-x-8 gap-y-2 text-sm text-brand-muted sm:grid-cols-2 lg:grid-cols-3">
           {referenceNames.map((name) => (
             <div key={name}>{name}</div>
           ))}
@@ -34,10 +32,8 @@ export default function ReferanslarimizPage() {
       </div>
 
       <div className="mt-20">
-        <h2 className="text-center text-2xl font-bold text-brand-primary-dark">
-          Çözüm Ortaklarımız
-        </h2>
-        <p className="mx-auto mt-2 max-w-xl text-center text-sm text-black/60">
+        <h2 className="text-center text-2xl font-bold text-white">Çözüm Ortaklarımız</h2>
+        <p className="mx-auto mt-2 max-w-xl text-center text-sm text-brand-muted">
           Sektörün önde gelen teknoloji markalarıyla çalışıyoruz.
         </p>
         <div className="mt-10">

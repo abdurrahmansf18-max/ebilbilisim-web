@@ -4,7 +4,7 @@ import { services } from "@/lib/services";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-black/5 bg-brand-primary-dark text-white">
+    <footer className="border-t border-white/10 bg-brand-primary-dark text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-4">
         <div>
           <h3 className="text-lg font-semibold">{siteConfig.name}</h3>

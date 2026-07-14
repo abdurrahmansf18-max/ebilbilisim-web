@@ -1,14 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import { siteConfig } from "@/lib/site-config";
+
+const inputClasses =
+  "mt-1 w-full rounded-lg border border-brand-border bg-brand-surface-2 px-4 py-2.5 text-sm text-white placeholder:text-brand-muted focus:border-brand-accent focus:outline-none";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: FormEvent) {
     e.preventDefault();
     const subject = encodeURIComponent(`Web sitesi iletişim formu — ${name}`);
     const body = encodeURIComponent(`${message}\n\nGönderen: ${name}\nE-posta: ${email}`);
@@ -18,7 +21,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-brand-primary-dark">
+        <label htmlFor="name" className="block text-sm font-medium text-white">
           Ad Soyad
         </label>
         <input
@@ -26,11 +29,11 @@ export default function ContactForm() {
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="mt-1 w-full rounded-lg border border-black/10 px-4 py-2.5 text-sm focus:border-brand-accent focus:outline-none"
+          className={inputClasses}
         />
       </div>
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-brand-primary-dark">
+        <label htmlFor="email" className="block text-sm font-medium text-white">
           E-posta
         </label>
         <input
@@ -39,11 +42,11 @@ export default function ContactForm() {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="mt-1 w-full rounded-lg border border-black/10 px-4 py-2.5 text-sm focus:border-brand-accent focus:outline-none"
+          className={inputClasses}
         />
       </div>
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-brand-primary-dark">
+        <label htmlFor="message" className="block text-sm font-medium text-white">
           Mesajınız
         </label>
         <textarea
@@ -52,12 +55,12 @@ export default function ContactForm() {
           rows={5}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="mt-1 w-full rounded-lg border border-black/10 px-4 py-2.5 text-sm focus:border-brand-accent focus:outline-none"
+          className={inputClasses}
         />
       </div>
       <button
         type="submit"
-        className="w-full rounded-full bg-brand-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-primary-dark"
+        className="btn-glow w-full rounded-full bg-brand-accent px-6 py-3 text-sm font-semibold text-brand-primary-dark transition hover:brightness-110"
       >
         Gönder
       </button>

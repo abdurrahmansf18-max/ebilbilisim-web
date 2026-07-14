@@ -3,11 +3,11 @@ import type { Logo } from "@/lib/references";
 
 export default function LogoStrip({ logos }: { logos: Logo[] }) {
   return (
-    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-5">
+    <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-5">
       {logos.map((logo) => (
         <div
           key={logo.name}
-          className="flex h-20 items-center justify-center rounded-xl border border-black/5 bg-white p-4 grayscale transition-all hover:grayscale-0"
+          className="card-glow flex h-20 items-center justify-center rounded-xl border border-brand-border bg-white p-4"
           title={logo.name}
         >
           <Image
