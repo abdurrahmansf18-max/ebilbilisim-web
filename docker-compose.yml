@@ -7,3 +7,11 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+
+  preview-tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: ebilbilisim-preview-tunnel
+    restart: unless-stopped
+    command: tunnel --url http://web:3000
+    depends_on:
+      - web
