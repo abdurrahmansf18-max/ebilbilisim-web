@@ -1,65 +1,144 @@
+import Link from "next/link";
 import Image from "next/image";
+import { siteConfig } from "@/lib/site-config";
+import { services } from "@/lib/services";
+import { partnerLogos, referenceLogos } from "@/lib/references";
+import ServiceCard from "@/components/ServiceCard";
+import LogoStrip from "@/components/LogoStrip";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <>
+      {/* Hero */}
+      <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/images/hero/golbasi-guvenlik-sistemleri-hero.jpg"
+          alt="Gölbaşı Ankara kamera ve güvenlik sistemleri"
+          fill
           priority
+          sizes="100vw"
+          className="object-cover"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+        <div className="absolute inset-0 bg-brand-primary-dark/60" />
+        <div className="relative mx-auto max-w-4xl px-4 py-24 text-center text-white sm:px-6">
+          <h1 className="text-3xl font-bold leading-tight sm:text-5xl">
+            {siteConfig.tagline}
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="mx-auto mt-5 max-w-2xl text-base text-white/85 sm:text-lg">
+            {siteConfig.founded}&apos;den bu yana kamera, alarm, yangın algılama ve
+            network altyapı çözümleri sunuyoruz.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/iletisim"
+              className="rounded-full bg-brand-accent px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-brand-primary-dark"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Ücretsiz Keşif Talep Edin
+            </Link>
+            <Link
+              href="/hizmetlerimiz"
+              className="rounded-full border border-white/40 px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
-              Learning
-            </a>{" "}
-            center.
+              Hizmetlerimizi İnceleyin
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Tagline strip */}
+      <section className="bg-brand-surface py-10">
+        <p className="mx-auto max-w-3xl px-4 text-center text-lg font-medium text-brand-primary-dark sm:px-6">
+          Kusursuz hizmet ve üstün teknoloji ile güvencemiz altındasınız.
+        </p>
+      </section>
+
+      {/* Hizmetlerimiz */}
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-brand-accent">
+            Hizmetlerimiz
+          </h2>
+          <p className="mt-2 text-3xl font-bold text-brand-primary-dark">
+            Gölbaşı ve Ankara genelinde uçtan uca çözümler
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
+            <ServiceCard key={service.slug} service={service} />
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Kurumsal özet */}
+      <section className="bg-brand-primary-dark py-20 text-white">
+        <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
+          <h2 className="text-3xl font-bold">Ebil Bilişim İnovatif ve Creative Çözümler Sunar</h2>
+          <p className="mt-4 text-white/80">
+            {siteConfig.founded} yılında İlkadım Bilgisayar olarak kurulan şirketimiz, 2013
+            yılından bu yana E-bil Bilişim ve Teknoloji Hizmetleri adıyla kamu ve özel sektöre
+            teknolojik danışmanlık, alt yapı kablolama ve ürün tedariği alanlarında hizmet
+            vermektedir.
+          </p>
+          <Link
+            href="/kurumsal"
+            className="mt-6 inline-block rounded-full border border-white/40 px-7 py-3 text-sm font-semibold transition-colors hover:bg-white/10"
+          >
+            Kurumsal Hakkımızda
+          </Link>
+        </div>
+      </section>
+
+      {/* Çözüm Ortakları */}
+      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+        <h2 className="text-center text-2xl font-bold text-brand-primary-dark">
+          Çözüm Ortaklarımız
+        </h2>
+        <p className="mx-auto mt-2 max-w-xl text-center text-sm text-black/60">
+          Sektörün önde gelen teknoloji markalarıyla çalışıyoruz.
+        </p>
+        <div className="mt-10">
+          <LogoStrip logos={partnerLogos} />
+        </div>
+      </section>
+
+      {/* Referanslar */}
+      <section className="bg-brand-surface py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 className="text-center text-2xl font-bold text-brand-primary-dark">
+            Referanslarımız
+          </h2>
+          <p className="mx-auto mt-2 max-w-xl text-center text-sm text-black/60">
+            Kamu kurumları ve özel sektörden seçkin müşterilerimiz.
+          </p>
+          <div className="mt-10">
+            <LogoStrip logos={referenceLogos.slice(0, 10)} />
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/referanslarimiz"
+              className="text-sm font-semibold text-brand-accent hover:underline"
+            >
+              Tüm referanslarımızı görün →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6">
+        <h2 className="text-2xl font-bold text-brand-primary-dark sm:text-3xl">
+          Projeleriniz bizim için önemli!
+        </h2>
+        <p className="mt-3 text-black/60">
+          Bugün bir Ebil Bilişim uzmanıyla görüşün — {siteConfig.phone}
+        </p>
+        <Link
+          href="/iletisim"
+          className="mt-6 inline-block rounded-full bg-brand-primary px-8 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-brand-primary-dark"
+        >
+          İletişime Geçin
+        </Link>
+      </section>
+    </>
   );
 }
