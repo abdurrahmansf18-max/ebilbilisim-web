@@ -18,9 +18,9 @@ export const services: Service[] = [
     slug: "kamera-ve-guvenlik-sistemleri",
     title: "Kamera ve Güvenlik Sistemleri",
     shortDescription:
-      "Gölbaşı ve Ankara genelinde konut, site ve işyerleri için uçtan uca kamera ve güvenlik çözümleri.",
+      "Türkiye genelinde konut, site ve işyerleri için uçtan uca kamera ve güvenlik çözümleri.",
     description:
-      "Gölbaşı ve Ankara genelinde konut, site ve işyerleri için uçtan uca güvenlik çözümleri kuruyoruz: IP kamera sistemleri, gece görüşlü ve hareket algılamalı kayıt cihazları, hırsız alarm sistemleri, geçiş kontrol ve turnike uygulamaları, kablolu/kablosuz entegre güvenlik altyapıları. Kurulumdan uzaktan izleme entegrasyonuna kadar tüm süreci tek elden yönetiyoruz.",
+      "Ankara Gölbaşı merkezimizden Türkiye genelinde konut, site ve işyerleri için uçtan uca güvenlik çözümleri kuruyoruz: IP kamera sistemleri, gece görüşlü ve hareket algılamalı kayıt cihazları, hırsız alarm sistemleri, geçiş kontrol ve turnike uygulamaları, kablolu/kablosuz entegre güvenlik altyapıları. Kurulumdan uzaktan izleme entegrasyonuna kadar tüm süreci tek elden yönetiyoruz.",
     features: [
       "Kamera Güvenlik Sistemleri",
       "Hırsız Alarm Sistemleri",
@@ -35,7 +35,7 @@ export const services: Service[] = [
     },
     seoTitle: "Gölbaşı Kamera Güvenlik Sistemleri Kurulumu | Ebil Bilişim",
     seoDescription:
-      "IP kamera, alarm ve geçiş kontrol sistemleri — Gölbaşı ve Ankara genelinde konut/işyeri güvenlik çözümleri. Keşif ve teklif için arayın.",
+      "IP kamera, alarm ve geçiş kontrol sistemleri — Türkiye genelinde konut/işyeri güvenlik çözümleri. Keşif ve teklif için arayın.",
   },
   {
     slug: "ses-ve-goruntu-sistemleri",
@@ -52,7 +52,7 @@ export const services: Service[] = [
     visual: { type: "icon", icon: "sound", gradient: "from-violet-500/25 via-blue-500/15 to-transparent" },
     seoTitle: "Ankara Ses ve Görüntü Sistemleri | Ebil Bilişim",
     seoDescription:
-      "Anons, seslendirme ve görüntü aktarım sistemleri — Ankara ve Gölbaşı'nda kurumsal ses/görüntü çözümleri.",
+      "Anons, seslendirme ve görüntü aktarım sistemleri — Türkiye genelinde kurumsal ses/görüntü çözümleri.",
   },
   {
     slug: "yangin-algilama-sistemleri",
@@ -73,7 +73,7 @@ export const services: Service[] = [
     },
     seoTitle: "Gölbaşı Yangın Algılama ve İhbar Sistemleri | Ebil Bilişim",
     seoDescription:
-      "Yönetmeliklere uygun yangın ihbar ve algılama sistemleri — Gölbaşı ve Ankara genelinde kurulum ve bakım.",
+      "Yönetmeliklere uygun yangın ihbar ve algılama sistemleri — Türkiye genelinde kurulum ve bakım.",
   },
   {
     slug: "alt-yapi-kablolama-cozumleri",
@@ -94,7 +94,7 @@ export const services: Service[] = [
     },
     seoTitle: "Ankara Network Altyapı ve Yapısal Kablolama | Ebil Bilişim",
     seoDescription:
-      "Yapısal kablolama, fiber optik altyapı ve network kurulumu — Ankara ve Gölbaşı'nda uçtan uca hizmet.",
+      "Yapısal kablolama, fiber optik altyapı ve network kurulumu — Türkiye genelinde uçtan uca hizmet.",
   },
   {
     slug: "merkezi-yayin-sistemi",
@@ -111,7 +111,7 @@ export const services: Service[] = [
     },
     seoTitle: "Merkezi Yayın Sistemi Kurulumu | Ebil Bilişim",
     seoDescription:
-      "Çok katlı yapılar ve kampüsler için merkezi ses/görüntü yayın sistemi kurulumu — Ankara ve Gölbaşı.",
+      "Çok katlı yapılar ve kampüsler için merkezi ses/görüntü yayın sistemi kurulumu — Türkiye genelinde.",
   },
   {
     slug: "bilgisayar-cevre-ve-birimleri",
@@ -123,7 +123,7 @@ export const services: Service[] = [
     features: ["Donanım Tedariki", "Çevre Birimleri", "Teknik Destek"],
     visual: { type: "icon", icon: "computer", gradient: "from-sky-500/25 via-blue-500/15 to-transparent" },
     seoTitle: "Bilgisayar Donanım ve Teknik Destek | Ebil Bilişim",
-    seoDescription: "Kurumsal bilgisayar donanımı, çevre birimleri tedariki ve teknik destek — Ankara.",
+    seoDescription: "Kurumsal bilgisayar donanımı, çevre birimleri tedariki ve teknik destek — Türkiye genelinde.",
   },
   {
     slug: "elektrik-proje-ve-taahhut",
@@ -141,7 +141,7 @@ export const services: Service[] = [
     ],
     visual: { type: "icon", icon: "bolt", gradient: "from-amber-500/25 via-orange-500/15 to-transparent" },
     seoTitle: "Ankara Elektrik Proje ve Taahhüt Hizmetleri | Ebil Bilişim",
-    seoDescription: "Elektrik projelendirme, pano, jeneratör ve enerji verimliliği çözümleri — Ankara ve Gölbaşı.",
+    seoDescription: "Elektrik projelendirme, pano, jeneratör ve enerji verimliliği çözümleri — Türkiye genelinde.",
   },
   {
     slug: "gunes-enerji-sistemleri-ges",
@@ -149,11 +149,11 @@ export const services: Service[] = [
     shortDescription:
       "Konut ve işyerleri için güneş enerji santrali (GES) tasarımı, kurulumu ve bakımı.",
     description:
-      "Konut ve işyerleri için güneş enerji santrali (GES) çözümleri tasarlıyor, kuruyor ve devreye alıyoruz. İhtiyaç analizinden sistem tasarımına, kurulumdan periyodik bakım ve teknik desteğe kadar süreci Gölbaşı ve Ankara genelinde yerinde takip ediyoruz.",
+      "Konut ve işyerleri için güneş enerji santrali (GES) çözümleri tasarlıyor, kuruyor ve devreye alıyoruz. İhtiyaç analizinden sistem tasarımına, kurulumdan periyodik bakım ve teknik desteğe kadar süreci Türkiye genelinde yerinde takip ediyoruz.",
     features: ["Sistem Tasarımı ve Danışmanlık", "Kurulum ve Montaj", "Bakım ve Teknik Destek"],
     visual: { type: "icon", icon: "sun", gradient: "from-yellow-400/25 via-amber-500/15 to-transparent" },
-    seoTitle: "Gölbaşı Güneş Enerji Sistemleri (GES) Kurulumu | Ebil Bilişim",
-    seoDescription: "Güneş enerji santrali tasarımı, kurulumu ve bakımı — Gölbaşı ve Ankara genelinde GES çözümleri.",
+    seoTitle: "Güneş Enerji Sistemleri (GES) Kurulumu | Ebil Bilişim",
+    seoDescription: "Güneş enerji santrali tasarımı, kurulumu ve bakımı — Türkiye genelinde GES çözümleri.",
   },
 ];
 

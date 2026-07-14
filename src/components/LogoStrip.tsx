@@ -7,15 +7,15 @@ export default function LogoStrip({ logos }: { logos: Logo[] }) {
       {logos.map((logo) => (
         <div
           key={logo.name}
-          className="card-glow flex h-20 items-center justify-center rounded-xl border border-brand-border bg-white p-4"
+          className="card-glow flex h-24 items-center justify-center rounded-xl border border-brand-border bg-white p-3"
           title={logo.name}
         >
           <Image
             src={logo.image}
             alt={logo.name}
-            width={120}
-            height={48}
-            className="max-h-10 w-auto object-contain"
+            width={160}
+            height={80}
+            className="max-h-16 w-auto max-w-full object-contain"
           />
         </div>
       ))}

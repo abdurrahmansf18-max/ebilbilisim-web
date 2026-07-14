@@ -28,7 +28,7 @@ export default function Home() {
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-base text-white/80 sm:text-lg">
             {siteConfig.founded}&apos;den bu yana kamera, alarm, yangın algılama ve
-            network altyapı çözümleri sunuyoruz.
+            network altyapı çözümlerini Türkiye genelinde hayata geçiriyoruz.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -61,12 +61,12 @@ export default function Home() {
             Hizmetlerimiz
           </h2>
           <p className="mt-2 text-3xl font-bold text-white">
-            Gölbaşı ve Ankara genelinde uçtan uca çözümler
+            Ankara Gölbaşı merkezli, Türkiye genelinde uçtan uca çözümler
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
+          {services.map((service, index) => (
+            <ServiceCard key={service.slug} service={service} index={index} />
           ))}
         </div>
       </section>

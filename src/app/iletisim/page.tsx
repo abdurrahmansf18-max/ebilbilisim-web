@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function IletisimPage() {
-  const mapQuery = encodeURIComponent(siteConfig.address.full);
+  const mapQuery = `${siteConfig.geo.latitude},${siteConfig.geo.longitude}`;
 
   return (
     <div>
@@ -72,7 +72,7 @@ export default function IletisimPage() {
           <div className="min-h-[320px] overflow-hidden rounded-2xl border border-brand-border">
             <iframe
               title="Ebil Bilişim Konum"
-              src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
+              src={`https://www.google.com/maps?q=${mapQuery}&z=16&output=embed`}
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: 320 }}
