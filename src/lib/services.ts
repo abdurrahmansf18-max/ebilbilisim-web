@@ -49,7 +49,11 @@ export const services: Service[] = [
       "Acil Anons ve Tahliye Sistemleri",
       "Görüntü Aktarım Sistemleri",
     ],
-    visual: { type: "icon", icon: "sound", gradient: "from-violet-500/25 via-blue-500/15 to-transparent" },
+    visual: {
+      type: "photo",
+      src: "/images/services/ses-goruntu-sistemleri-kurulum.jpg",
+      alt: "Ses ve görüntü sistemleri kurulumu",
+    },
     seoTitle: "Ankara Ses ve Görüntü Sistemleri | Ebil Bilişim",
     seoDescription:
       "Anons, seslendirme ve görüntü aktarım sistemleri — Türkiye genelinde kurumsal ses/görüntü çözümleri.",
@@ -121,7 +125,11 @@ export const services: Service[] = [
     description:
       "Kurumsal ve bireysel müşterilere bilgisayar donanımı, çevre birimleri tedarik ve teknik destek hizmeti sunuyoruz.",
     features: ["Donanım Tedariki", "Çevre Birimleri", "Teknik Destek"],
-    visual: { type: "icon", icon: "computer", gradient: "from-sky-500/25 via-blue-500/15 to-transparent" },
+    visual: {
+      type: "photo",
+      src: "/images/services/bilgisayar-donanim-teknik-destek.jpg",
+      alt: "Bilgisayar donanım ve teknik destek",
+    },
     seoTitle: "Bilgisayar Donanım ve Teknik Destek | Ebil Bilişim",
     seoDescription: "Kurumsal bilgisayar donanımı, çevre birimleri tedariki ve teknik destek — Türkiye genelinde.",
   },
@@ -139,7 +147,11 @@ export const services: Service[] = [
       "Jeneratör ve Güç Sistemleri",
       "Enerji Verimliliği Çözümleri",
     ],
-    visual: { type: "icon", icon: "bolt", gradient: "from-amber-500/25 via-orange-500/15 to-transparent" },
+    visual: {
+      type: "photo",
+      src: "/images/services/elektrik-proje-taahhut-pano.jpg",
+      alt: "Ankara elektrik proje ve taahhüt",
+    },
     seoTitle: "Ankara Elektrik Proje ve Taahhüt Hizmetleri | Ebil Bilişim",
     seoDescription: "Elektrik projelendirme, pano, jeneratör ve enerji verimliliği çözümleri — Türkiye genelinde.",
   },
@@ -151,7 +163,11 @@ export const services: Service[] = [
     description:
       "Konut ve işyerleri için güneş enerji santrali (GES) çözümleri tasarlıyor, kuruyor ve devreye alıyoruz. İhtiyaç analizinden sistem tasarımına, kurulumdan periyodik bakım ve teknik desteğe kadar süreci Türkiye genelinde yerinde takip ediyoruz.",
     features: ["Sistem Tasarımı ve Danışmanlık", "Kurulum ve Montaj", "Bakım ve Teknik Destek"],
-    visual: { type: "icon", icon: "sun", gradient: "from-yellow-400/25 via-amber-500/15 to-transparent" },
+    visual: {
+      type: "photo",
+      src: "/images/services/golbasi-gunes-enerji-sistemleri-ges.jpg",
+      alt: "Gölbaşı güneş enerji sistemleri GES",
+    },
     seoTitle: "Güneş Enerji Sistemleri (GES) Kurulumu | Ebil Bilişim",
     seoDescription: "Güneş enerji santrali tasarımı, kurulumu ve bakımı — Türkiye genelinde GES çözümleri.",
   },
