@@ -22,29 +22,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-primary-dark/70 via-brand-primary-dark/75 to-background" />
         <div className="glow-orb -top-20 left-1/4 h-96 w-96 bg-brand-accent/30" />
         <div className="glow-orb top-1/3 right-1/4 h-80 w-80 bg-brand-primary/40" />
-        <div className="relative mx-auto max-w-4xl px-4 py-24 text-center text-white sm:px-6">
-          <h1 className="text-3xl font-bold leading-tight sm:text-5xl">
-            {siteConfig.tagline}
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-base text-white/80 sm:text-lg">
-            {siteConfig.founded}&apos;den bu yana kamera, alarm, yangın algılama ve
-            network altyapı çözümlerini Türkiye genelinde hayata geçiriyoruz.
-          </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/iletisim"
-              className="btn-glow rounded-full bg-brand-accent px-7 py-3 text-sm font-semibold text-brand-primary-dark transition hover:brightness-110"
-            >
-              Ücretsiz Keşif Talep Edin
-            </Link>
-            <Link
-              href="/hizmetlerimiz"
-              className="rounded-full border border-white/25 px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-            >
-              Hizmetlerimizi İnceleyin
-            </Link>
-          </div>
-        </div>
       </section>
 
       {/* Tagline strip */}
