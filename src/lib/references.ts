@@ -19,7 +19,7 @@ export const referenceLogos: Logo[] = [
   { name: "Türk Telekom", image: "/images/references/ttelekom.png" },
   { name: "Roketsan", image: "/images/references/roketsan.png" },
   { name: "ABB (Ankara Büyükşehir Belediyesi)", image: "/images/references/abb.png" },
-  { name: "Sinpaş Oran Konutları", image: "/images/references/sinpas.png" },
+  { name: "Peveli", image: "/images/references/peveli.jpeg" },
 ];
 
 // Logosu olmayan diğer referanslar (metin listesi)
